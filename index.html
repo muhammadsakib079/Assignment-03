@@ -38,18 +38,172 @@
             content-visibility: auto;
           }
         }
-
+        :root{
+            --green--color:#179800;
+            --dark--color:rgb(77, 77, 77);
+            --card--color:#EFEBE3;
+        }
+        .header-bg{
+            background: linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);
+        }
+        .sora{
+            font-family: "Sora", serif;
+        }
+        .poppins{
+            font-family: "Poppins", serif;
+        }        
       </style>
 
 </head>
 <body>
     
-    <header>
+    <header class="header-bg sora">
+        <!-- Navigation bar Start -->
+         <!-- logo for lg -->
+        <nav class="lg:max-w-[80vw] max-sm:px-4 mx-auto flex justify-between py-4 items-center">
+            <div class="lg:hidden">
+                <img class="w-16" src="./image/leaves.png" alt="">
+            </div>
+            <!-- logo for sm -->
+            <div class="max-sm:hidden">
+                <img src="./image/logo-header.png" alt="">
+            </div>
+            <!-- Bar for lg -->
+            <div class="max-sm:hidden">
+                <ul class="menu menu-horizontal gap-16 text-lg text-[var(--dark--color)]">
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="max-sm:hidden flex items-center gap-10 text-lg">
+                <!-- Search & Cart Style -->
+                <div class="flex ">
+                    <div class=""onclick="my_modal_1.showModal()">
+                        <i class="fa-solid fa-magnifying-glass mr-5 btn bg-none"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-cart-shopping btn"></i>
+                    </div>
+                </div>
+                <!-- advance style -->
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box text-center">
+                      <div>
+                        <h3 class="text-lg font-bold text-center mb-6">Search your items</h3>
+                      <input class="h-12 w-96 rounded-full border text-xl font-medium text-center" type="search">
+                      </div>
+                      <div class="modal-action model-h">
+                        <form method="dialog">
+                          <button class="btn bg-[var(--green--color)] text-white">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+                <!-- Login & Register Style -->
+                <div class="">
+                    <button class="btn text-lg mr-5 border-[var(--green--color)] text-[var(--dark--color)]">
+                        <a href="">Login</a>
+                    </button>
+                    <button class="btn text-lg bg-[var(--green--color)] text-white">
+                        <a href="">Register</a>
+                    </button>
+                </div>
+            </div>
+            <!-- For Small Device  -->
+            <div class="dropdown dropdown-end lg:hidden ">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle ">
+                    <i class="fa-solid fa-bars text-3xl "></i>
+                </div>
+                <ul tabindex="0" class="menu menu-lg dropdown-content  bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li ><a href="">Product</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navigation bar End -->
 
+         <!-- Hero style -->
+        <section class="text-center lg:pt-32 max-sm:pt-10">
+            <!-- Text Style -->
+             <!-- for lg -->
+            <div class="max-sm:hidden">
+                <h1 class="text-6xl font-semibold mb-4">
+                    Freshness <span class="text-[var(--green--color)] ">You Can </span>
+                </h1>
+                <h1 class="text-6xl font-semibold ">
+                    <span class="text-[var(--green--color)]">Count</span> On, Prices You’ll Love!
+                </h1>
+            </div>
+            <!-- for sm -->
+            <div class="lg:hidden">
+                <h1 class="text-5xl font-semibold leading-normal">
+                    Freshness<span class="text-[var(--green--color)]">You Can Count</span> On, Prices You’ll Love!
+                </h1>                
+            </div>
+            <p class="text-xl py-12 text-[var(--dark--color)]">
+                Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+            </p>
+        </section>
+        <!-- Image style -->
+        <section>
+                <img class="mx-auto" src="./image/hero-vegetables.png" alt="">
+        </section>
     </header>
 
 
     <main>
+
+        <section class="max-w-[80vw] mx-auto sora my-40">
+            <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12">
+                Services
+            </h3>
+            <div class="flex justify-between max-sm:flex-col gap-20">
+                <div class="bg-[var(--card--color)] p-12 rounded-2xl text-center ">
+                    <div class="max-w-36 mx-auto flex justify-center bg-white rounded-full">
+                        <img src="./image/delivery.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold py-7">
+                            24/7 Services                            
+                        </h4>
+                        <p class="text-[var(--dark--color)]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[var(--card--color)] p-12 rounded-2xl text-center ">
+                    <div class="max-w-36 mx-auto flex justify-center bg-white rounded-full">
+                        <img src="./image/delivery.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold py-7">
+                            24/7 Services                            
+                        </h4>
+                        <p class="text-[var(--dark--color)]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-[var(--card--color)] p-12 rounded-2xl text-center ">
+                    <div class="max-w-36 mx-auto flex justify-center bg-white rounded-full">
+                        <img src="./image/delivery.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold py-7">
+                            24/7 Services                            
+                        </h4>
+                        <p class="text-[var(--dark--color)]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
 
     </main>
 
