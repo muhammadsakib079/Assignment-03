@@ -43,6 +43,10 @@
             --dark--color:rgb(77, 77, 77);
             --card--color:#EFEBE3;
         }
+        .cardx{
+            background: rgb(83,219,58);
+            background: linear-gradient(155deg, rgba(83,219,58,1) 0%, rgba(255,255,255,1) 100%);
+        }
         .header-bg{
             background: linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);
         }
@@ -142,7 +146,7 @@
                     Freshness<span class="text-[var(--green--color)]">You Can Count</span> On, Prices You’ll Love!
                 </h1>                
             </div>
-            <p class="text-xl py-12 text-[var(--dark--color)]">
+            <p class="text-xl py-12 text-[var(--dark--color)] max-sm:mx-[3vw]">
                 Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
             </p>
         </section>
@@ -155,47 +159,47 @@
 
     <main>
 
-        <section class="max-w-[80vw] mx-auto sora my-40">
-            <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12">
+        <section class="max-w-[80vw] mx-auto sora my-40 max-sm:mb-12 max-sm:mt-20">
+            <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12 max-sm:pb-4">
                 Services
             </h3>
-            <div class="flex justify-between max-sm:flex-col gap-20">
+            <div class="flex justify-between max-sm:flex-col gap-20 max-sm:gap-10">
                 <div class="bg-[var(--card--color)] p-12 rounded-2xl text-center ">
                     <div class="max-w-36 mx-auto flex justify-center bg-white rounded-full">
-                        <img src="./image/delivery.png" alt="">
+                        <img class="p-5" src="./image/service.png" alt="">
                     </div>
                     <div>
                         <h4 class="text-2xl font-semibold py-7">
                             24/7 Services                            
                         </h4>
-                        <p class="text-[var(--dark--color)]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        <p class="text-[var(--dark--color)] lg:max-w-[750px]">
+                            Dear customer's we provide 24 hours/7days services for you. If you need any kind of help, just contact with us.
                         </p>
                     </div>
                 </div>
                 <div class="bg-[var(--card--color)] p-12 rounded-2xl text-center ">
                     <div class="max-w-36 mx-auto flex justify-center bg-white rounded-full">
-                        <img src="./image/delivery.png" alt="">
+                        <img class="p-5" src="./image/delivery.png" alt="">
                     </div>
                     <div>
                         <h4 class="text-2xl font-semibold py-7">
-                            24/7 Services                            
+                            Fast Delivery                           
                         </h4>
-                        <p class="text-[var(--dark--color)]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        <p class="text-[var(--dark--color)] lg:max-w-[750px]">
+                            Our delivery speed is so far than other's online shop in this area. So take our service and feadback it
                         </p>
                     </div>
                 </div>
                 <div class="bg-[var(--card--color)] p-12 rounded-2xl text-center ">
                     <div class="max-w-36 mx-auto flex justify-center bg-white rounded-full">
-                        <img src="./image/delivery.png" alt="">
+                        <img class="p-5" src="./image/healthy.png" alt="">
                     </div>
                     <div>
                         <h4 class="text-2xl font-semibold py-7">
-                            24/7 Services                            
+                            Healthy Products                             
                         </h4>
-                        <p class="text-[var(--dark--color)]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        <p class="text-[var(--dark--color)] lg:max-w-[750px]">
+                            Healthy food for healthy life, so you should buy healthy food. We promised that we provide best Products, Thanks. 
                         </p>
                     </div>
                 </div>
@@ -203,18 +207,18 @@
             </div>
         </section>
 
-        <section class="bg-gray-100 py-4">
-            <div class="max-w-[80vw] mx-auto sora my-40">
-                <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12">
+        <section class="bg-[var(--card--color)] py-4">
+            <div class="max-w-[80vw] mx-auto sora my-40 max-sm:my-8">
+                <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12 max-sm:pb-8">
                     Popular Products
                 </h3>
-                <div class="flex justify-between gap-5 max-sm:flex-col">
-                    <div class="w- bg-lime-300 rounded-2xl px-8 pt-8 pb-0">
+                <div class="flex justify-between gap-5 max-sm:gap-10 max-sm:flex-col">
+                    <div class="cardx rounded-2xl px-8 pt-8 lg:w-[35%]">
                         <div>
                             <h4 class="text-4xl text-white font-semibold">
                                 30% OFF
                             </h4>
-                            <p class="py-4 w-96">
+                            <p class="py-4 w-96 max-sm:w-80">
                                 Discover a world of treats, toys and essentials handpicked for
                             </p>
                             <button class="btn bg-white">
@@ -225,7 +229,7 @@
                             <img src="./image/vegetable-offer.png" alt="">
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 max-sm:grid-cols-2 gap-10 max-sm:gap-6">
+                    <div class="grid grid-cols-3 max-sm:grid-cols-2 gap-6 max-sm:gap-4">
                         <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/Onion.png" alt="">
@@ -239,6 +243,56 @@
                         <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/tomato.png" alt="">
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <h4 class="text-xl font-medium py-0.5 max-sm:text-sm">Tomato 500<sub>g</sub></h4>
+                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                            <div>
+                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/potato.png" alt="">
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Potato 1 KG</h4>
+                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                            <div>
+                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/tomato.png" alt="">
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <h4 class="text-xl font-medium py-0.5 max-sm:text-sm">Tomato 500<sub>g</sub></h4>
+                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                            <div>
+                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/Onion.png" alt="">
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
+                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                            <div>
+                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/tomato.png" alt="">
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <h4 class="text-xl font-medium py-0.5 max-sm:text-sm">Tomato 500<sub>g</sub></h4>
+                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                            <div>
+                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/Onion.png" alt="">
                             </div>
                             <div>
                                 <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
@@ -252,57 +306,7 @@
                             </div>
                             <div>
                                 <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
-                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
-                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
-                            <div>
-                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/tomato.png" alt="">
-                            </div>
-                            <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
-                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
-                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
-                            <div>
-                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/Onion.png" alt="">
-                            </div>
-                            <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
-                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
-                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
-                            <div>
-                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/tomato.png" alt="">
-                            </div>
-                            <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
-                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
-                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
-                            <div>
-                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/Onion.png" alt="">
-                            </div>
-                            <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
-                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
-                                <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
-                            <div>
-                                <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/potato.png" alt="">
-                            </div>
-                            <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
-                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
+                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Potato 1 KG</h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
@@ -312,7 +316,7 @@
                             </div>
                             <div>
                                 <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
-                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
+                                <h4 class="text-xl max-sm:text-base font-medium py-0.5">Potato 1 KG</h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
@@ -361,10 +365,38 @@
             </div>
         </section>
 
+        
     </main>
 
+   
+    <footer class="bg-[#179800]">
 
-    <footer>
+        <section class="lg:flex  justify-between items-end text-white px-36 pb-20 pt-96 max-sm:px-6 max-sm:pb-6">
+            <div>
+                <img src="./image/logo-footer.png" alt="">
+                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+            <div class="max-sm:py-10">
+                <ul>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <h6>
+                        Follow Us
+                    </h6>
+                </div>
+                <div class="">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </section>
 
     </footer>
 
