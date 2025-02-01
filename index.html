@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="shortcut icon" href="./image/leaves.png" type="image/x-icon">
     <!-- Fonts Linked -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
 
     <!-- Icons Linked -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Tailwind & DaisyUI Linked -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -21,15 +26,15 @@
     <!-- Custom Style in Tailwind -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                
+
+
             }
-          }
+            }
         }
-      </script>
+    </script>
 
     <!-- Stylesheet -->
     <style type="text/tailwindcss">
@@ -59,11 +64,12 @@
       </style>
 
 </head>
+
 <body>
-    
+
     <header class="header-bg sora">
         <!-- Navigation bar Start -->
-         <!-- logo for lg -->
+        <!-- logo for lg -->
         <nav class="lg:max-w-[80vw] max-sm:px-4 mx-auto flex justify-between py-4 items-center">
             <div class="lg:hidden">
                 <img class="w-16" src="./image/leaves.png" alt="">
@@ -83,7 +89,7 @@
             <div class="max-sm:hidden flex items-center gap-10 text-lg">
                 <!-- Search & Cart Style -->
                 <div class="flex ">
-                    <div class=""onclick="my_modal_1.showModal()">
+                    <div class="" onclick="my_modal_1.showModal()">
                         <i class="fa-solid fa-magnifying-glass mr-5 btn bg-none"></i>
                     </div>
                     <div>
@@ -93,23 +99,23 @@
                 <!-- advance style -->
                 <dialog id="my_modal_1" class="modal">
                     <div class="modal-box text-center">
-                      <div>
-                        <h3 class="text-lg font-bold text-center mb-6">Search your items</h3>
-                      <input class="h-12 w-96 rounded-full border text-xl font-medium text-center" type="search">
-                      </div>
-                      <div class="modal-action model-h">
-                        <form method="dialog">
-                          <button class="btn bg-[var(--green--color)] text-white">Search</button>
-                        </form>
-                      </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-center mb-6">Search your items</h3>
+                            <input class="h-12 w-96 rounded-full border text-xl font-medium text-center" type="search">
+                        </div>
+                        <div class="modal-action model-h">
+                            <form method="dialog">
+                                <button class="btn bg-[var(--green--color)] text-white">Search</button>
+                            </form>
+                        </div>
                     </div>
-                  </dialog>
+                </dialog>
                 <!-- Login & Register Style -->
                 <div class="">
-                    <button class="btn text-lg mr-5 border-[var(--green--color)] text-[var(--dark--color)]">
+                    <button class="btn text-lg hover:bg-cyan-700 hover:text-white hover:border-none mr-5 border-[var(--green--color)] text-[var(--dark--color)]">
                         <a href="">Login</a>
                     </button>
-                    <button class="btn text-lg bg-[var(--green--color)] text-white">
+                    <button class="btn hover:bg-cyan-700 text-lg bg-[var(--green--color)] text-white">
                         <a href="">Register</a>
                     </button>
                 </div>
@@ -119,8 +125,9 @@
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle ">
                     <i class="fa-solid fa-bars text-3xl "></i>
                 </div>
-                <ul tabindex="0" class="menu menu-lg dropdown-content  bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li ><a href="">Product</a></li>
+                <ul tabindex="0"
+                    class="menu menu-lg dropdown-content  bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a href="">Product</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Contact us</a></li>
                 </ul>
@@ -128,10 +135,10 @@
         </nav>
         <!-- Navigation bar End -->
 
-         <!-- Hero style -->
+        <!-- Hero style -->
         <section class="text-center lg:pt-32 max-sm:pt-10">
             <!-- Text Style -->
-             <!-- for lg -->
+            <!-- for lg -->
             <div class="max-sm:hidden">
                 <h1 class="text-6xl font-semibold mb-4">
                     Freshness <span class="text-[var(--green--color)] ">You Can </span>
@@ -144,15 +151,16 @@
             <div class="lg:hidden">
                 <h1 class="text-5xl font-semibold leading-normal">
                     Freshness<span class="text-[var(--green--color)]">You Can Count</span> On, Prices You’ll Love!
-                </h1>                
+                </h1>
             </div>
             <p class="text-xl py-12 text-[var(--dark--color)] max-sm:mx-[3vw]">
-                Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+                Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got
+                you covered every day!
             </p>
         </section>
         <!-- Image style -->
         <section>
-                <img class="mx-auto" src="./image/hero-vegetables.png" alt="">
+            <img class="mx-auto hover:animate-pulse" src="./image/hero-vegetables.png" alt="">
         </section>
     </header>
 
@@ -163,17 +171,18 @@
             <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12 max-sm:pb-4">
                 Services
             </h3>
-            <div class="flex justify-between max-sm:flex-col gap-20 max-sm:gap-10">
+            <div class="flex justify-between max-sm:flex-col gap-12 max-sm:gap-8">
                 <div class="bg-[var(--card--color)] p-12 rounded-2xl text-center ">
                     <div class="max-w-36 mx-auto flex justify-center bg-white rounded-full">
                         <img class="p-5" src="./image/service.png" alt="">
                     </div>
                     <div>
                         <h4 class="text-2xl font-semibold py-7">
-                            24/7 Services                            
+                            24/7 Services
                         </h4>
                         <p class="text-[var(--dark--color)] lg:max-w-[750px]">
-                            Dear customer's we provide 24 hours/7days services for you. If you need any kind of help, just contact with us.
+                            Dear customer's we provide 24 hours/7days services for you. If you need any kind of help,
+                            just contact with us.
                         </p>
                     </div>
                 </div>
@@ -183,10 +192,11 @@
                     </div>
                     <div>
                         <h4 class="text-2xl font-semibold py-7">
-                            Fast Delivery                           
+                            Fast Delivery
                         </h4>
                         <p class="text-[var(--dark--color)] lg:max-w-[750px]">
-                            Our delivery speed is so far than other's online shop in this area. So take our service and feadback it
+                            Our delivery speed is so far than other's online shop in this area. So take our service and
+                            feadback it
                         </p>
                     </div>
                 </div>
@@ -196,19 +206,20 @@
                     </div>
                     <div>
                         <h4 class="text-2xl font-semibold py-7">
-                            Healthy Products                             
+                            Healthy Products
                         </h4>
                         <p class="text-[var(--dark--color)] lg:max-w-[750px]">
-                            Healthy food for healthy life, so you should buy healthy food. We promised that we provide best Products, Thanks. 
+                            Healthy food for healthy life, so you should buy healthy food. We promised that we provide
+                            best Products, Thanks.
                         </p>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
         <section class="bg-[var(--card--color)] py-4">
-            <div class="max-w-[80vw] mx-auto sora my-40 max-sm:my-8">
+            <div class="max-w-[80vw] mx-auto sora my-28 max-sm:my-8">
                 <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12 max-sm:pb-8">
                     Popular Products
                 </h3>
@@ -230,92 +241,110 @@
                         </div>
                     </div>
                     <div class="grid grid-cols-3 max-sm:grid-cols-2 gap-6 max-sm:gap-4">
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                        <div
+                            class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/Onion.png" alt="">
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span
+                                        class="text-base max-sm:text font-normal">4.5</span></div>
                                 <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                        <div
+                            class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/tomato.png" alt="">
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span
+                                        class="text-base max-sm:text font-normal">4.5</span></div>
                                 <h4 class="text-xl font-medium py-0.5 max-sm:text-sm">Tomato 500<sub>g</sub></h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                        <div
+                            class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/potato.png" alt="">
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span
+                                        class="text-base max-sm:text font-normal">4.5</span></div>
                                 <h4 class="text-xl max-sm:text-base font-medium py-0.5">Potato 1 KG</h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                        <div
+                            class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/tomato.png" alt="">
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span
+                                        class="text-base max-sm:text font-normal">4.5</span></div>
                                 <h4 class="text-xl font-medium py-0.5 max-sm:text-sm">Tomato 500<sub>g</sub></h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                        <div
+                            class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/Onion.png" alt="">
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span
+                                        class="text-base max-sm:text font-normal">4.5</span></div>
                                 <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                        <div
+                            class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/tomato.png" alt="">
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span
+                                        class="text-base max-sm:text font-normal">4.5</span></div>
                                 <h4 class="text-xl font-medium py-0.5 max-sm:text-sm">Tomato 500<sub>g</sub></h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                        <div
+                            class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/Onion.png" alt="">
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span
+                                        class="text-base max-sm:text font-normal">4.5</span></div>
                                 <h4 class="text-xl max-sm:text-base font-medium py-0.5">Onion 1 KG</h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
+                        <div
+                            class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/potato.png" alt="">
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span
+                                        class="text-base max-sm:text font-normal">4.5</span></div>
                                 <h4 class="text-xl max-sm:text-base font-medium py-0.5">Potato 1 KG</h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24 max-sm:hidden">
+                        <div
+                            class="flex items-center bg-white shadow-lg rounded-2xl gap-4 p-4 max-sm:p-2 w-80 max-sm:w-auto max-sm:h-24 max-sm:hidden">
                             <div>
                                 <img class="w-24 max-sm:w-16 rounded-2xl bg-red-100" src="./image/potato.png" alt="">
                             </div>
                             <div>
-                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span class="text-base max-sm:text font-normal">4.5</span></div>
+                                <div><i class="fa-solid fa-star text-yellow-400"></i> <span
+                                        class="text-base max-sm:text font-normal">4.5</span></div>
                                 <h4 class="text-xl max-sm:text-base font-medium py-0.5">Potato 1 KG</h4>
                                 <h5 class="text-base max-sm:text-sm font-medium">$39.99</h5>
                             </div>
@@ -324,14 +353,15 @@
                 </div>
             </div>
         </section>
-        <section class="max-w-[80vw] mx-auto sora mt-40 mb-80">
+        <section class="max-w-[80vw] mx-auto sora lg:mt-40  mb-80">
             <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12">
-                Popular Products
+                Arrival & Offers
             </h3>
             <div class="flex justify-between max-sm:flex-col gap-4 max-sm:gap-8">
                 <div class="flex justify-between w-full bg-[#115414] rounded-2xl  ">
                     <div class="p-8 max-sm:p-4 text-center">
-                        <div class="flex justify-center"><img class="mt-8 max-sm:mt-4" src="./image/dawat-logo.png" alt=""></div>
+                        <div class="flex justify-center"><img class="mt-8 max-sm:mt-4" src="./image/dawat-logo.png"
+                                alt=""></div>
                         <div class="bg-[#63B76D] lg:px-10 py-4 max-sm:py-2 my-8 max-sm:my-4 rounded-2xl text-white">
                             <h4 class="text-2xl max-sm:text-base">
                                 Cook Exotic Dishes
@@ -347,8 +377,10 @@
                 </div>
                 <div class="flex justify-between bg-[#102861] rounded-2xl lg:w-[70%]">
                     <div class="p-8 max-sm:p-4 text-center">
-                        <div class="flex justify-center"><img class="mt-4 max-sm:mt-2 max-sm:h-24" src="./image/india-gate-logo.png" alt=""></div>
-                        <div class="bg-[#2A4D97] px-10 max-sm:px-4 py-4 max-sm:py-2 my-8 max-sm:my-2 rounded-2xl text-white">
+                        <div class="flex justify-center"><img class="mt-4 max-sm:mt-2 max-sm:h-24"
+                                src="./image/india-gate-logo.png" alt=""></div>
+                        <div
+                            class="bg-[#2A4D97] px-10 max-sm:px-4 py-4 max-sm:py-2 my-8 max-sm:my-2 rounded-2xl text-white">
                             <h4 class="text-2xl max-sm:text-base">
                                 World’s No.1 Rice
                             </h4>
@@ -361,12 +393,13 @@
                         <img src="./image/india-gate-mock-up.png" alt="">
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
         <section class="relative">
-            <div class="absolute bg-gray-200 items-center left-80 right-80 max-sm:left-10 max-sm:right-10 max-sm:bottom-1 bottom-20 py-12 max-sm:py-6 px-12  rounded-2xl flex justify-evenly max-sm:flex-col max-sm:text-center">
+            <div
+                class="absolute bg-gray-200 items-center left-80 right-80 max-sm:left-10 max-sm:right-10 max-sm:bottom-1 bottom-20 py-12 max-sm:py-6 px-12  rounded-2xl flex justify-evenly max-sm:flex-col max-sm:text-center">
                 <div>
                     <img src="./image/vegetable-busket.png" alt="">
                 </div>
@@ -377,7 +410,8 @@
                     <p class="text-xl py-9 max-sm:py-4">
                         Exclusive training tips, ticks, product deals and more.
                     </p>
-                    <input class="h-12 w-96 max-sm:w-80 rounded-lg px-5" placeholder="Enter email...." type="email" name="" id="">
+                    <input class="h-12 w-96 max-sm:w-80 rounded-lg px-5" placeholder="Enter email...." type="email"
+                        name="" id="">
                     <div class="pt-9 max-sm:pt-4">
                         <button class="btn bg-[var(--green--color)] text-white">
                             Subscribe
@@ -391,19 +425,19 @@
         </section>
     </main>
 
-   
+
     <footer class="bg-[#179800]">
-        
+
         <section class="lg:flex  justify-between items-end text-white px-36 py-20 max-sm:px-6 max-sm:pb-6">
             <div>
                 <img class="mb-5" src="./image/logo-footer.png" alt="">
                 <p class="w-96">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
             </div>
-            <div class="max-sm:py-10">
+            <div class="max-sm:py-16">
                 <ul>
-                    <li ><a href="">Product</a></li>
+                    <li><a href="">Product</a></li>
                     <li class="my-6"><a href="">Services</a></li>
-                    <li ><a href="">Contact us</a></li>
+                    <li><a href="">Contact us</a></li>
                 </ul>
             </div>
             <div>
@@ -424,4 +458,5 @@
     </footer>
 
 </body>
+
 </html>
