@@ -55,6 +55,9 @@
         .header-bg{
             background: linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);
         }
+        .footer-bg{
+            background: linear-gradient(360.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);
+        }
         .sora{
             font-family: "Sora", serif;
         }
@@ -353,8 +356,9 @@
                 </div>
             </div>
         </section>
-        <section class="max-w-[80vw] mx-auto sora mt-28 max-sm:mt-16 mb-96">
-            <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12">
+        
+        <section class="max-w-[80vw] mx-auto sora mt-28 max-sm:mt-16 mb-20 max-sm:mb-12 poppins">
+            <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12 sora">
                 Arrival & Offers
             </h3>
             <div class="flex justify-between max-sm:flex-col gap-4 max-sm:gap-8">
@@ -363,11 +367,11 @@
                         <div class="flex justify-center"><img class="mt-8 max-sm:mt-4" src="./image/dawat-logo.png"
                                 alt=""></div>
                         <div class="bg-[#63B76D] lg:px-10 py-4 max-sm:py-2 my-8 max-sm:my-4 rounded-2xl text-white">
-                            <h4 class="text-2xl max-sm:text-base">
+                            <h4 class="text-2xl max-sm:text-base px-2">
                                 Cook Exotic Dishes
                             </h4>
                         </div>
-                        <h2 class="text-4xl max-sm:text-lg font-medium text-white">
+                        <h2 class="text-4xl max-sm:text-lg font-light text-white">
                             UP to <span class="font-bold">20% OFF</span>
                         </h2>
                     </div>
@@ -385,35 +389,79 @@
                                 World’s No.1 Rice
                             </h4>
                         </div>
-                        <h2 class="text-4xl max-sm:text-lg font-medium text-white ">
+                        <h2 class="text-4xl max-sm:text-lg font-light text-white ">
                             UP to <span class="font-bold">40% OFF</span>
                         </h2>
                     </div>
-                    <div class="flex max-sm:justify-center items-end w-40 pr-10">
+                    <div class="flex max-sm:justify-center items-end max-sm:w-40 pr-10">
                         <img src="./image/india-gate-mock-up.png" alt="">
                     </div>
                 </div>
 
             </div>
         </section>
-
+        <section class="footer-bg pt-20 max-sm:pt-14">
+            <section class="max-w-[80vw] max-sm:max-w-[90vw] mx-auto mb-96 max-sm:mb-80 ">
+                <h3 class="text-[var(--green--color)] text-4xl font-semibold pb-12 max-sm:pb-6 sora">
+                    Get Explore
+                </h3>
+                <div class="carousel w-full rounded-2xl">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img
+                        src="./image/co (4).jpg"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img
+                        src="./image/co (2).jpg"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img
+                        src="./image/co (1).jpg"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img
+                        src="./image/co (3).jpg"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </section>
         <section class="relative">
             <div
-                class="absolute bg-gray-200 items-center left-80 right-80 max-sm:left-10 max-sm:right-10 max-sm:bottom-1 bottom-20 py-12 max-sm:py-6 px-12  rounded-2xl flex justify-evenly max-sm:flex-col max-sm:text-center">
+                class="absolute bg-[#EFEBE3] items-center left-80 right-80 max-sm:left-10 max-sm:right-10 max-sm:bottom-1 bottom-20 py-12 max-sm:py-6 px-12  rounded-2xl flex justify-evenly max-sm:flex-col max-sm:text-center sora">
                 <div>
                     <img src="./image/vegetable-busket.png" alt="">
                 </div>
-                <div class="max-sm:">
-                    <h3 class="text-4xl font-semibold ">
+                <div>
+                    <h3 class="text-4xl max-sm:text-3xl font-semibold max-sm:py-3">
                         Get Grocery News!
                     </h3>
                     <p class="text-xl py-9 max-sm:py-4">
                         Exclusive training tips, ticks, product deals and more.
                     </p>
-                    <input class="h-12 w-96 max-sm:w-80 rounded-lg px-5" placeholder="Enter email...." type="email"
+                    <input class="h-14 w-[22vw] max-sm:w-80 rounded-lg px-5" placeholder="Enter email...." type="email"
                         name="" id="">
-                    <div class="pt-9 max-sm:pt-4">
-                        <button class="btn w-44 text-lg hover:bg-cyan-700 hover:text-white hover:border-none bg-[var(--green--color)] text-white">
+                    <div class="pt-9 max-sm:pt-7">
+                        <button class="btn w-44 text-lg hover:bg-cyan-700 hover:text-white hover:border-none bg-[var(--green--color)] text-white ">
                             Subscribe
                         </button>
                     </div>
@@ -428,10 +476,10 @@
 
     <footer class="bg-[#179800]">
 
-        <section class="lg:flex lg:max-w-[80vw] mx-auto justify-between items-end text-white  py-20 max-sm:px-6 max-sm:pb-6">
+        <section class="lg:flex lg:max-w-[80vw] mx-auto justify-between items-end text-white py-20 max-sm:px-6 max-sm:pb-6 sora">
             <div>
                 <img class="mb-5" src="./image/logo-footer.png" alt="">
-                <p class="w-96">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                <p class="w-80">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
             </div>
             <div class="max-sm:py-16">
                 <ul>
